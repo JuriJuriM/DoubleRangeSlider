@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./main.scss")
+        title Document
+    body
+        .block 
+            .block__title This is my new parcel
+            .block__text
+                P 
+                | I am very proud that I could put parcel on my computer.
+                | It was great action!
+                | Мне нравится новый детектив!
+        .content 
+            .container
+                .doubslider 
+                    .doubslider__values
+                        span.doublslider__span(id='range1') 0
+                        span.doublslider__span(id='range2') 100
+                    .doubslider__track
+                    input.doubslider__input(type='range' min='0' max='100' value='0' id='slider-1')
+                    input.doubslider__input(type='range' min='0' max='100' value='100' id='slider-2')
+
+        script(src="./index.js")

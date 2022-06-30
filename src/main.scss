@@ -1,0 +1,140 @@
+// Файл обнуляющих стилей
+@import "null.scss";
+
+.main {
+    /* Ссылка на файл изображения */
+    color: red;
+}
+
+body{
+    font-style: italic;
+}
+.block{
+    margin: 0 0 30px 0;
+    &__title{
+        font-size: 34px;
+        text-align: center;
+        margin: 20px 0 20px 0;
+        padding: 10px;
+        background: rgb(194, 191, 191);
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    &__text{
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(211, 127, 127);
+        text-align: center;
+        background: rgb(177, 207, 177);
+    }
+}
+
+.content{
+    flex: 1 1 auto;
+}
+.container{
+    margin: 0 20px;
+}
+.doubslider{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: rgb(220, 178, 178);
+    border-radius: 5px;
+    &__input{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 95%;
+        outline: none;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+        pointer-events: none;
+    }
+    &__track{
+        width: 95%;
+        height: 5px;
+        background-color: #3264fe;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        border-radius: 5px;
+    }
+    &__input::-webkit-slider-runnable-track{
+        -webkit-appearance: none;
+        height: 5px;
+    }
+    &__input::-moz-range-track{
+        -moz-appearance: none;
+        height: 5px;
+    }
+    &__input::-ms-track{
+        appearance: none;
+        height: 5px;
+    }
+    &__input::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        height: 1.7em;
+        width: 1.7em;
+        background-color: #3264fe;
+        cursor: pointer;
+        border-radius: 50px;
+        margin-top: -9px;
+        pointer-events: auto;
+    }
+    &__input::-moz-range-thumb{
+        -webkit-appearance: none;
+        height: 1.7em;
+        width: 1.7em;
+        background-color: #3264fe;
+        cursor: pointer;
+        border-radius: 50px;
+        pointer-events: auto;
+    }
+    &__input::-ms-thumb{
+        -webkit-appearance: none;
+        height: 1.7em;
+        width: 1.7em;
+        background-color: #3264fe;
+        cursor: pointer;
+        border-radius: 50px;
+        pointer-events: auto;
+    }
+    &__input:active::-webkit-slider-thumb{
+        background-color: #ffffff;
+        border: 3px solid #3264fe;
+    }
+    &__values{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0 90px 0;
+        padding: 10px 0;
+        background-color: #3264fe;
+        width: 32%;
+        position: relative;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 25px;
+        color: #ffffff;
+    }
+    &__values::before{
+        content: '';
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-top: 15px solid #3264fe;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        margin: auto;
+        bottom: -14px;
+        left: 0;
+        right: 0;
+    }
+}
