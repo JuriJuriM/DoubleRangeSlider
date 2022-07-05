@@ -23154,7 +23154,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // Импортируйте компоненты
 (0, _main.default)();
-console.log('Hi');
+console.log('Hi'); // Double range slider
+
 var sliderOne = document.getElementById('slider-1');
 var sliderTwo = document.getElementById('slider-2');
 var displayValOne = document.getElementById('range1');
@@ -23185,7 +23186,24 @@ function fillColor() {
   var persent1 = sliderOne.value / sliderMaxValue * 100;
   var persent2 = sliderTwo.value / sliderMaxValue * 100;
   sliderTrack.style.background = "linear-gradient(to right, #dadae5 ".concat(persent1, "%, #3264fe ").concat(persent1, "%, #3264fe ").concat(persent2, "%, #dadae5 ").concat(persent2, "%)");
-}
+} // Slider number three
+
+
+var range = document.querySelector('.slider-three__input');
+var rangeNum = document.querySelector('.slider-three__num');
+var labelIn = document.querySelector('.slider-three__in');
+
+range.oninput = function () {
+  rangeNum.style.left = this.value + 'px';
+  rangeNum.innerHTML = this.value;
+  labelIn.value = this.value;
+};
+
+labelIn.oninput = function () {
+  rangeNum.style.left = this.value + 'px';
+  rangeNum.innerHTML = this.value;
+  range.value = this.value;
+};
 },{"prettier":"../node_modules/prettier/standalone.js","./main":"main.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -23214,7 +23232,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64560" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57513" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -16,12 +16,26 @@ html(lang="en")
                 | Мне нравится новый детектив!
         .content 
             .container
-                .doubslider 
+                .doub-title(class='title') Double range slider 
+                .doubslider
                     .doubslider__values
                         span.doublslider__span(id='range1') 0
                         span.doublslider__span(id='range2') 100
                     .doubslider__track
                     input.doubslider__input(type='range' min='0' max='100' value='0' id='slider-1')
                     input.doubslider__input(type='range' min='0' max='100' value='100' id='slider-2')
+                .slider-three
+                    .container
+                        .slider-three__row
+                            .slider-three__title(class='title') Slider number three
+                            .slider-three__label
+                                .slider-three__text Number 
+                                input.slider-three__in(type='number' min='0' max='200' placeholder='0' id='input-1')
+                            .slider-three__numbers 
+                                .slider-three__first From 0
+                                .slider-three__range
+                                    .slider-three__num 0
+                                    input.slider-three__input(type='range' min='0' max='200' value='0')
+                                .slider-three__last To 200
 
         script(src="./index.js")

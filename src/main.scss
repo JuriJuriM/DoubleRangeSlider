@@ -35,12 +35,19 @@ body{
 .container{
     margin: 0 20px;
 }
+.doub-title{
+    text-align: center;
+}
+.title{
+    font-size: 24px;
+}
 .doubslider{
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 30px 20px;
+    margin: 0 0 40px 0;
     background-color: rgb(220, 178, 178);
     border-radius: 5px;
     &__input{
@@ -136,5 +143,71 @@ body{
         bottom: -14px;
         left: 0;
         right: 0;
+    }
+}
+
+.slider-three{
+    margin: 0 0 40px 0;
+    &__row{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__title{
+        margin: 0 0 30px 0;
+    }
+    &__label{
+        display: flex;
+        margin: 0 0 25px 0;
+        width: 50px;
+    }
+    &__in{
+        //height: 13px;
+        width: 60px;
+        font-size: 20px;
+        //margin: 5px 0 0 0;
+        border: 1px solid black;
+        text-align: center;
+        background-color: rgb(244, 244, 151);
+    }
+    &__text{
+        margin: 0 15px 0 0;
+        font-size: 20px;
+    }
+    &__numbers{
+        display: flex;
+    }
+    &__first,
+    &__last{
+        padding: 30px 0 0 0;
+        font-size: 20px;
+    }
+    &__first{
+        margin: 0 10px 0 0;
+    }
+    &__range{
+        width: 223px;
+        height: 50px;
+        position: relative;
+    }
+    &__num{
+        width: 40px;
+        height: 25px;
+        position: absolute;
+        padding: 0 0 0 5px;
+        font-size: 20px;
+    }
+    &__input{
+        width: 215px;
+        position: absolute;
+        bottom: 0;
+    }
+    &__span{
+        border: 1px solid black;
+        width: 40px;
+        height: 20px;
+        text-align: center;
+        padding: 3px;
+        margin: 0 0 10px 0;
     }
 }
